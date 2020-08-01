@@ -1,0 +1,68 @@
+[
+{
+  "model": "webapp.Book",
+  "pk": 1,
+  "fields": {
+    "name": "Bob",
+    "email": "Bob@gmail.com",
+    "descriptions": "Some long informative text",
+    "created_at": "2020-08-01T07:43:23.946Z",
+    "updated_at": "2020-08-01T07:43:23.946Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.Book",
+  "pk": 2,
+  "fields": {
+    "name": "Ann",
+    "email": "Ann@gmail.com",
+    "descriptions": "Some long informative text",
+    "created_at": "2020-08-01T07:44:48.918Z",
+    "updated_at": "2020-08-01T07:44:48.918Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.Book",
+  "pk": 3,
+  "fields": {
+    "name": "John",
+    "email": "John@gmail.com",
+    "descriptions": "Some long informative text",
+    "created_at": "2020-08-01T07:46:02.770Z",
+    "updated_at": "2020-08-01T07:46:02.770Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.Book",
+  "pk": 4,
+  "fields": {
+    "name": "Tia",
+    "email": "Tia@gmail.com",
+    "descriptions": "Some long informative text",
+    "created_at": "2020-08-01T07:46:35.184Z",
+    "updated_at": "2020-08-01T07:46:35.184Z",
+    "status": "active"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$b2RjPnyGztPL$4MsHCsR2f7LrAVIiBKjMUBzzzvwOewHHYWi68am6F2A=",
+    "last_login": "2020-08-01T07:27:03.019Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-08-01T07:25:02.385Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
