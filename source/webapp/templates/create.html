@@ -22,5 +22,9 @@
     <br/>
     <input type="submit" value="Send"/>
 </form>
+  <form method="GET" action="/add/" class="text-center">
+        {% csrf_token %}
+        <p><input type="submit" value="Home"></p>
+    </form>
 </body>
 </html>

@@ -21,7 +21,12 @@
             </div>
             <h3>{{ book.descriptions }}</h3>
         </div>
+
     {% endfor %}
+  <form method="GET" action="/add/" class="text-center">
+        {% csrf_token %}
+        <p><input type="submit" value="Create" class="button"></p>
+    </form>
 </div>
 
 
