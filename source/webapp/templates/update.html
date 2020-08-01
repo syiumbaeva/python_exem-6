@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Update recording{% endblock %}
+{% block content %}
+    <h1>Update recording</h1>
+    <form method="POST" action="/update/{{ Books.pk }}/">
+        {% csrf_token %}
+        <p><label>Name</label> <input type="text" name="name" value="{{ Books.name }}"></p>
+        <p><label>Email</label> <input type="text" name="email" value="{{ Books.email }}"></p>
+        <p><label>Text</label> <textarea name="descriptions">{{ Books.descriptions }}</textarea></p>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+{% endblock %}

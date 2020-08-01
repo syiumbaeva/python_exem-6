@@ -25,5 +25,15 @@ def create_view(request):
         return render(request, 'index.html', context)
 
 
+def update_view(request, pk):
+    Books = Book.objects.get(pk=pk)
+    if request.method == 'GET':
+        return render(request, 'update.html', context={'Books': Books})
+    elif request.method == 'POST':
+        Books.name = request.POST.get('name')
+        Books.email = request.POST.get('email')
+        Books.descriptions = request.POST.get('descriptions')
+        Books.save()
+        return index_view(request)
 
 
