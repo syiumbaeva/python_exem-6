@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>List</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="main">Guest book</h1>
+    {% for book in Books %}
+        <div class="card">
+            <div class="title">
+                <h2>{{ book.name }}({{ book.email }})</h2>
+                <div class="icons">
+                    <a href="/update/{{ book.pk }}" class='edit'></a>
+                    <a href="/delete/{{ book.pk }}" class="delete"> </a>
+                </div>
+
+            </div>
+            <h3>{{ book.descriptions }}</h3>
+        </div>
+    {% endfor %}
+</div>
+
+
+</body>
+</html>
