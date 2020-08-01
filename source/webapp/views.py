@@ -37,3 +37,14 @@ def update_view(request, pk):
         return index_view(request)
 
 
+def delete_view(request, pk):
+    Books = Book.objects.get(pk=pk)
+    if request.method == 'GET':
+        return render(request, 'delete.html', context={'Books': Books})
+    elif request.method == 'POST':
+        Books.delete()
+        return index_view(request)
+
+
+
+

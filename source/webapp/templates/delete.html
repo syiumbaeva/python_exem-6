@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Delete recording{% endblock %}
+{% block menu %}
+    <li><a href="/delete/{{ Books.pk }}/">View</a></li>
+{% endblock %}
+{% block content %}
+    <h1>Are you sure want to delete article "{{ Books }}"?</h1>
+    <form method="POST" action="/delete/{{ Books.pk }}/" class="text-center">
+        {% csrf_token %}
+        <p><input type="submit" value="Confirm"></p>
+
+    </form>
+    <form method="POST" action="/" class="text-center">
+        {% csrf_token %}
+        <p><input type="submit" value="Cancel"></p>
+    </form>
+{% endblock %}
